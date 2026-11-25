@@ -3,9 +3,9 @@
 // (and the same AW- ID in index.html <head>). While they contain "XXXX", no conversion fires.
 // GBC - WhatsApp Inquiry -> every wa.me button on the page + both forms
 // GBC - Call Click       -> every tel: button (floating call + sticky bar)
-var GBC_AW_ID = 'AW-XXXXXXXXXX';
-var GBC_WA_LABEL = 'XXXXXXXXXXXXXXXXXXXX';
-var GBC_CALL_LABEL = 'XXXXXXXXXXXXXXXXXXXX';
+var GBC_AW_ID = 'AW-18582080286';
+var GBC_WA_LABEL = 'o2WNCPSn574dEJ6W0JxF';
+var GBC_CALL_LABEL = 'CZEfCJ7H6L4dEJ6W0JxF';
 var GBC_TRACKING_READY = !/XXXX/.test(GBC_AW_ID + GBC_WA_LABEL + GBC_CALL_LABEL);
 function fireFormConversion() {
   if (GBC_TRACKING_READY && typeof gtag === 'function') { gtag('event', 'conversion', { 'send_to': GBC_AW_ID + '/' + GBC_WA_LABEL }); }
